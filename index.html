@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hyses-Nex Company Limited - Leading EPC firm specializing in integrated water infrastructure and sustainable engineering solutions.">
+    <meta name="keywords" content="water treatment, infrastructure, engineering, Nigeria, EPC, smart metering">
+    <title>Hyses-Nex | Water Infrastructure & Engineering Solutions</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo-16x16.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="logo-container">
+                <img src="assets/images/logo.avif" alt="Hyses-Nex Logo" class="preloader-logo">
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loading-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/logo.avif" alt="Hyses-Nex Logo" class="logo">
+                <span class="logo-text">Hyses-Nex</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#team" class="nav-link">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#partners" class="nav-link">Partners</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Services, it's</span>
+                        <span class="title-line highlight">who we are.</span>
+                    </h1>
+                    <p class="hero-description">
+                        Hyses-Nex Company Limited is a leading EPC firm specializing in integrated water infrastructure and sustainable engineering solutions. From large-scale dams and treatment plants to community water reticulation and smart metering, we deliver turnkey water projects across Nigeria and beyond.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="15000">0</span>
+                            <span class="stat-label">Homes Connected</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="18">0</span>
+                            <span class="stat-label">KM of Pipeline</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="25000">0</span>
+                            <span class="stat-label">Smart Meters</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary">
+                            <span>Explore Services</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Get Quote</span>
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="assets/images/hyses-nex-engineer.avif" alt="Hyses-Nex Engineer" class="engineer-image">
+                        <div class="image-overlay">
+                            <div class="floating-card">
+                                <i class="fas fa-water"></i>
+                                <span>Water Treatment Excellence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Water & Wastewater Treatment</h3>
+                    <p>Design–Build–Operate solutions for municipal and industrial clients</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-dam"></i>
+                    </div>
+                    <h3>Hydro Technical Development</h3>
+                    <p>Dams, Storage & Reservoirs for sustainable water management</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Pipeline Distribution</h3>
+                    <p>Complete reticulation and distribution network solutions</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-gauge-high"></i>
+                    </div>
+                    <h3>Smart Metering</h3>
+                    <p>Revenue protection and automated billing systems</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Road Construction</h3>
+                    <p>Infrastructure and civil works for comprehensive development</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Flood Risk Management</h3>
+                    <p>Urban drainage and flood protection solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Overview Video Section -->
+    <section class="video-showcase">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">See Our Work</span>
+                <h2 class="section-title">Engineering Excellence in Action</h2>
+                <p class="section-description">
+                    Watch how Hyses-Nex delivers comprehensive water infrastructure solutions across Nigeria
+                </p>
+            </div>
+            
+            <div class="video-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="video-wrapper">
+                    <video class="showcase-video" controls>
+                        <source src="hyses-nex-caption.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <div class="play-button" onclick="playVideo()">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">About Hyses-Nex</span>
+                <h2 class="section-title">Who We Are</h2>
+                <p class="section-description">
+                    An indigenous Nigerian engineering company with over a decade of experience delivering innovative solutions in utilities and environmental infrastructure.
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <div class="mission-vision">
+                        <div class="mv-item">
+                            <div class="mv-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="mv-content">
+                                <h3>Our Mission</h3>
+                                <p>To provide best-in-class, lasting technical solutions for water impurities and process inefficiencies across industries and communities.</p>
+                            </div>
+                        </div>
+                        <div class="mv-item">
+                            <div class="mv-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="mv-content">
+                                <h3>Our Vision</h3>
+                                <p>To be the preferred solution provider in water purification, infrastructure, and process optimization across Nigeria and West Africa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-features" data-aos="fade-left">
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Integrity</h4>
+                                <p>We deliver with transparency and trust</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Excellence</h4>
+                                <p>We uphold quality in every detail</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Innovation</h4>
+                                <p>We apply forward-thinking solutions</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Sustainability</h4>
+                                <p>We design with the future in mind</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certifications" data-aos="fade-up">
+                <h3 class="cert-title">Certifications & Standards</h3>
+                <div class="cert-grid">
+                    <div class="cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>ISO 9001:2008 – Quality Management</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-leaf"></i>
+                        <span>ISO 14001:2015 – Environmental Management</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-hard-hat"></i>
+                        <span>ISO 45001:2018 – Occupational Health and Safety</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-stamp"></i>
+                        <span>COREN Registered Engineering Company</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Detail Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Our Services</span>
+                <h2 class="section-title">Comprehensive Engineering Solutions</h2>
+                <p class="section-description">
+                    End-to-end EPC services for utilities and civil infrastructure across Nigeria and West Africa
+                </p>
+            </div>
+            
+            <div class="services-tabs">
+                <div class="tab-buttons" data-aos="fade-up">
+                    <button class="tab-btn active" data-target="water-treatment">
+                        <i class="fas fa-tint"></i>
+                        <span>Water Treatment</span>
+                    </button>
+                    <button class="tab-btn" data-target="hydro-tech">
+                        <i class="fas fa-dam"></i>
+                        <span>Hydro Technical</span>
+                    </button>
+                    <button class="tab-btn" data-target="pipeline">
+                        <i class="fas fa-network-wired"></i>
+                        <span>Pipeline</span>
+                    </button>
+                    <button class="tab-btn" data-target="smart-metering">
+                        <i class="fas fa-gauge-high"></i>
+                        <span>Smart Metering</span>
+                    </button>
+                    <button class="tab-btn" data-target="flood-management">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Flood Management</span>
+                    </button>
+                    <button class="tab-btn" data-target="road-construction">
+                        <i class="fas fa-road"></i>
+                        <span>Road Construction</span>
+                    </button>
+                </div>
+                
+                <div class="tab-contents">
+                    <div class="tab-content active" id="water-treatment" data-aos="fade-up">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Water & Wastewater Treatment (Design–Build–Operate)</h3>
+                                <p>We design and build treatment systems tailored to raw-water characteristics and end-use requirements and can operate/maintain them under SLAs. Solutions range from compact community plants to large state facilities.</p>
+                                
+                                <div class="service-features">
+                                    <div class="feature-list">
+                                        <h4>Key Capabilities:</h4>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> Source assessment and treatability studies</li>
+                                            <li><i class="fas fa-check"></i> Multi-stage filtration and advanced oxidation</li>
+                                            <li><i class="fas fa-check"></i> PLC/SCADA integration and remote monitoring</li>
+                                            <li><i class="fas fa-check"></i> Energy-efficient pumps and process controls</li>
+                                            <li><i class="fas fa-check"></i> Comprehensive O&M and operator training</li>
+                                        </ul>
+                                    </div>
+                                    <div class="service-outcomes">
+                                        <h4>Outcomes & KPIs:</h4>
+                                        <div class="outcome-items">
+                                            <div class="outcome-item">
+                                                <i class="fas fa-chart-line"></i>
+                                                <span>Stable production to target capacity</span>
+                                            </div>
+                                            <div class="outcome-item">
+                                                <i class="fas fa-leaf"></i>
+                                                <span>Lower chemical and energy use</span>
+                                            </div>
+                                            <div class="outcome-item">
+                                                <i class="fas fa-clock"></i>
+                                                <span>Improved uptime and simplified operations</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="hydro-tech" data-aos="fade-up">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Hydro-Technical Development (Dams, Storage & Reservoirs)</h3>
+                                <p>We provide planning, design, and construction for water storage and control infrastructure; dams, raw-water reservoirs, clear-water tanks, and elevated steel tanks for gravity distribution.</p>
+                                
+                                <div class="service-features">
+                                    <div class="feature-list">
+                                        <h4>Scope of Work:</h4>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> Hydrology/hydraulic analysis and geotechnical investigations</li>
+                                            <li><i class="fas fa-check"></i> Spillways, intake structures, and outlet works</li>
+                                            <li><i class="fas fa-check"></i> Elevated steel tanks and ground reservoirs</li>
+                                            <li><i class="fas fa-check"></i> Corrosion protection and instrumentation</li>
+                                            <li><i class="fas fa-check"></i> Hydraulic modelling and GIS-supported siting</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="pipeline" data-aos="fade-up">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Pipeline Distribution & Reticulation</h3>
+                                <p>We design and construct transmission mains and distribution networks, including Ward metered areas (WMAs), bulk metering, valve chambers, and household connections.</p>
+                                
+                                <div class="service-features">
+                                    <div class="feature-list">
+                                        <h4>Key Features:</h4>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> Network modelling and pipe sizing</li>
+                                            <li><i class="fas fa-check"></i> Trenchless crossings using thrust boring</li>
+                                            <li><i class="fas fa-check"></i> Multiple pipe materials (uPVC/DI/HDPE/steel)</li>
+                                            <li><i class="fas fa-check"></i> GPS/GIS asset mapping</li>
+                                            <li><i class="fas fa-check"></i> Complete house connections and metering</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="smart-metering" data-aos="fade-up">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Smart Metering & Revenue Protection</h3>
+                                <p>In partnership with technology providers, we deploy prepaid/postpaid smart meters and billing platforms to improve revenue collection and customer experience.</p>
+                                
+                                <div class="service-features">
+                                    <div class="feature-list">
+                                        <h4>Track Record:</h4>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> 25,000+ smart meters deployed across multiple states</li>
+                                            <li><i class="fas fa-check"></i> AMR/AMI configuration and integration</li>
+                                            <li><i class="fas fa-check"></i> Revenue assurance and tamper detection</li>
+                                            <li><i class="fas fa-check"></i> Automated billing and reduced NRW</li>
+                                            <li><i class="fas fa-check"></i> Customer education and utility staff training</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="flood-management" data-aos="fade-up">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Flood Risk Management & Urban Drainage</h3>
+                                <p>We mitigate flood risk with resilient drainage systems, early-warning concepts, and nature-based solutions that protect lives and infrastructure.</p>
+                                
+                                <div class="service-features">
+                                    <div class="feature-list">
+                                        <h4>Solutions Include:</h4>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> Catchment analysis and flood risk assessments</li>
+                                            <li><i class="fas fa-check"></i> Drainage masterplans and detention basins</li>
+                                            <li><i class="fas fa-check"></i> Green infrastructure and bioswales</li>
+                                            <li><i class="fas fa-check"></i> GIS mapping and hydrological modelling</li>
+                                            <li><i class="fas fa-check"></i> Water-level alerts and monitoring systems</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="road-construction" data-aos="fade-up">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Road Construction & Ancillary Civil Works</h3>
+                                <p>Our civil works team delivers new road construction and rehabilitation tied to utility projects, industrial estates, and public infrastructure.</p>
+                                
+                                <div class="service-features">
+                                    <div class="feature-list">
+                                        <h4>Capabilities:</h4>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> Topographic surveys and geometric design</li>
+                                            <li><i class="fas fa-check"></i> Pavement and subgrade design</li>
+                                            <li><i class="fas fa-check"></i> Earthworks and asphalt/concrete paving</li>
+                                            <li><i class="fas fa-check"></i> Side drains and erosion control</li>
+                                            <li><i class="fas fa-check"></i> QA/QC testing and compliance</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Why Choose Hyses-Nex</span>
+                <h2 class="section-title">Strategic Engineering Excellence</h2>
+                <p class="section-description">
+                    As a proudly indigenous engineering company, we deliver strategic, full-spectrum infrastructure solutions
+                </p>
+            </div>
+            
+            <div class="choose-us-grid">
+                <div class="choose-us-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="choose-us-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="choose-us-content">
+                        <h3>Full EPC Capabilities</h3>
+                        <p>Integrated design, procurement, and construction services across the complete water cycle</p>
+                    </div>
+                </div>
+                
+                <div class="choose-us-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="choose-us-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="choose-us-content">
+                        <h3>15,000+ Homes Connected</h3>
+                        <p>Proven track record in smart metering deployment enabling automated billing and loss reduction</p>
+                    </div>
+                </div>
+                
+                <div class="choose-us-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="choose-us-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="choose-us-content">
+                        <h3>Rehabilitation Expertise</h3>
+                        <p>Specializing in upgrading aging infrastructure and restoring capacity for optimal performance</p>
+                    </div>
+                </div>
+                
+                <div class="choose-us-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="choose-us-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="choose-us-content">
+                        <h3>18+ KM Pipeline Delivered</h3>
+                        <p>Extensive pipeline distribution and transmission infrastructure across urban areas</p>
+                    </div>
+                </div>
+                
+                <div class="choose-us-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="choose-us-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="choose-us-content">
+                        <h3>State & Donor Client Experience</h3>
+                        <p>Successfully executed high-value projects for government and international development programs</p>
+                    </div>
+                </div>
+                
+                <div class="choose-us-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="choose-us-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="choose-us-content">
+                        <h3>Industrial-Grade Standards</h3>
+                        <p>Leadership team with experience from Cadbury, Coca-Cola, and Shell bringing industrial excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">The Nex Team</span>
+                <h2 class="section-title">Experienced Professionals</h2>
+                <p class="section-description">
+                    Our dedicated team of experienced professionals utilize the latest technology and best equipment to get the job done right
+                </p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-card">
+                        <div class="member-info">
+                            <h3>Kunle Otun</h3>
+                            <p class="member-role">Chairman</p>
+                            <p class="member-description">Bachelor's in Chemical Engineering and MBA with 23 years of extensive experience in Manufacturing, QHSE management, Engineering Services, and Public water utility management.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-card">
+                        <div class="member-info">
+                            <h3>Awokoya Adeshina</h3>
+                            <p class="member-role">General Manager</p>
+                            <p class="member-description">HND in Mechanical Engineering with over 28 years of work experience in engineering, procurement, and construction. Extensive experience with Unilever and Cadbury Nigeria.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member-card">
+                        <div class="member-info">
+                            <h3>Olatunji Ogunlana</h3>
+                            <p class="member-role">Research and Logistics Director</p>
+                            <p class="member-description">Bachelor's in Geology and Master's in Hydrogeology with close to 35 years at Lagos Water Corporation. Expert in Water Resources management and policy development.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+                    <div class="member-card">
+                        <div class="member-info">
+                            <h3>Remi Odufeko</h3>
+                            <p class="member-role">Technical Director</p>
+                            <p class="member-description">Bachelors and Masters in Mechanical Engineering with over 20 years experience in Engineering services, Supply chain, and Quality management. Former Franchise Technical Manager at Coca-Cola.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member" data-aos="fade-up" data-aos-delay="500">
+                    <div class="member-card">
+                        <div class="member-info">
+                            <h3>Kazeem Busari</h3>
+                            <p class="member-role">Operations Director</p>
+                            <p class="member-description">Bachelors and Masters in Chemical Engineering plus MBA with over 25 years experience in Manufacturing, Quality management, and HSE specializing in Effluent treatment.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member" data-aos="fade-up" data-aos-delay="600">
+                    <div class="member-card">
+                        <div class="member-info">
+                            <h3>Gani Adebayo</h3>
+                            <p class="member-role">Financial Consultant</p>
+                            <p class="member-description">Bachelor's and Master's in Economics including MBA. Fellow of the Institute of Chartered Accountants of Nigeria with extensive banking industry experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners & Clients Section -->
+    <section id="partners" class="partners-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Our Network</span>
+                <h2 class="section-title">Partners & Clients</h2>
+                <p class="section-description">
+                    Trusted by leading organizations across Nigeria and beyond
+                </p>
+            </div>
+            
+            <div class="partners-content">
+                <div class="partners-tab-buttons" data-aos="fade-up">
+                    <button class="partners-tab-btn active" data-target="technology-partners">Technology Partners</button>
+                    <button class="partners-tab-btn" data-target="clients">Our Clients</button>
+                </div>
+                
+                <div class="partners-tab-contents">
+                    <div class="partners-tab-content active" id="technology-partners">
+                        <div class="partners-grid">
+                            <div class="partner-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="partner-card">
+                                    <div class="partner-logo">
+                                        <img src="assets/images/partners/ADEDGE WATER TECHNOLOGIES.avif" alt="AdEdge Water Technologies">
+                                    </div>
+                                    <div class="partner-info">
+                                        <h3>AdEdge Water Technologies</h3>
+                                        <p>Founded in 2002, AdEdge specializes in packaged treatment solutions and specialty medias. With over 700 installations worldwide and 99.8% systems operational since 2002.</p>
+                                        <div class="partner-stats">
+                                            <span class="stat">700+ Installations</span>
+                                            <span class="stat">99.8% Operational</span>
+                                            <span class="stat">12 EPA Projects</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="partner-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="partner-card">
+                                    <div class="partner-logo">
+                                        <img src="assets/images/partners/HANGZHOU LAISON TECHNOLOGY COMPANY LTD.avif" alt="Hangzhou Laison Technology">
+                                    </div>
+                                    <div class="partner-info">
+                                        <h3>Hangzhou Laison Technology</h3>
+                                        <p>Innovation-oriented high-tech company specializing in smart water meters. Ships in bulk to countries covering 70% of Africa's population including Egypt, South Africa, Ethiopia, and Nigeria.</p>
+                                        <div class="partner-stats">
+                                            <span class="stat">10,000+ Meters Deployed</span>
+                                            <span class="stat">Smart Metering Leader</span>
+                                            <span class="stat">Africa Coverage</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="partners-tab-content" id="clients">
+                        <div class="clients-grid">
+                            <div class="client-logo" data-aos="fade-up" data-aos-delay="100">
+                                <img src="assets/images/clients/lagos_water_corporation.avif" alt="Lagos Water Corporation">
+                            </div>
+                            <div class="client-logo" data-aos="fade-up" data-aos-delay="200">
+                                <img src="assets/images/clients/EKITI WATER CORPORATION.avif" alt="Ekiti Water Corporation">
+                            </div>
+                            <div class="client-logo" data-aos="fade-up" data-aos-delay="300">
+                                <img src="assets/images/clients/UNIVERSITY OF LAGOS.avif" alt="University of Lagos">
+                            </div>
+                            <div class="client-logo" data-aos="fade-up" data-aos-delay="400">
+                                <img src="assets/images/clients/THE COCA-COLA COMPANY.avif" alt="The Coca-Cola Company">
+                            </div>
+                            <div class="client-logo" data-aos="fade-up" data-aos-delay="500">
+                                <img src="assets/images/clients/SEVEN-UP BOTTLING COMPANY.avif" alt="Seven-Up Bottling Company">
+                            </div>
+                            <div class="client-logo" data-aos="fade-up" data-aos-delay="600">
+                                <img src="assets/images/clients/UAC FOODS.avif" alt="UAC Foods">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">How to Engage Us</h2>
+                <p class="section-description">
+                    Ready to start your next infrastructure project? Let's discuss your requirements
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Office</h4>
+                            <p>149 Ogudu Road, Ogudu GRA, Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone Numbers</h4>
+                            <p>+234 803 483 9122<br>+234 906 077 3657</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Addresses</h4>
+                            <p>info@hyses-nex.com<br>careers@hyses-nex.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Website</h4>
+                            <p>www.hyses-nex.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="water-treatment">Water & Wastewater Treatment</option>
+                                <option value="hydro-tech">Hydro Technical Development</option>
+                                <option value="pipeline">Pipeline Distribution</option>
+                                <option value="smart-metering">Smart Metering</option>
+                                <option value="flood-management">Flood Risk Management</option>
+                                <option value="road-construction">Road Construction</option>
+                                <option value="infrastructure">Infrastructure Rehabilitation</option>
+                                <option value="operations">Operations & Maintenance</option>
+                                <option value="consultation">General Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Project Details" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="engagement-process" data-aos="fade-up">
+                <h3>Our Engagement Process</h3>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Request Consultation</h4>
+                            <p>Send your brief or RFP to info@hyses-nex.com</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Proposal Review</h4>
+                            <p>We review requirements and propose tailored scope and methodology</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Project Execution</h4>
+                            <p>Dedicated PMO team mobilizes with detailed execution plan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.avif" alt="Hyses-Nex Logo" class="logo">
+                        <span class="logo-text">Hyses-Nex</span>
+                    </div>
+                    <p class="footer-description">
+                        Leading EPC firm specializing in integrated water infrastructure and sustainable engineering solutions across Nigeria and West Africa.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="mailto:info@hyses-nex.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Water & Wastewater Treatment</a></li>
+                        <li><a href="#services">Hydro Technical Development</a></li>
+                        <li><a href="#services">Pipeline Distribution</a></li>
+                        <li><a href="#services">Smart Metering</a></li>
+                        <li><a href="#services">Flood Risk Management</a></li>
+                        <li><a href="#services">Road Construction</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="mailto:careers@hyses-nex.com">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info-footer">
+                        <p><i class="fas fa-map-marker-alt"></i> 149 Ogudu Road, Ogudu GRA, Lagos</p>
+                        <p><i class="fas fa-phone"></i> +234 803 483 9122</p>
+                        <p><i class="fas fa-envelope"></i> info@hyses-nex.com</p>
+                        <p><i class="fas fa-globe"></i> www.hyses-nex.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Hyses-Nex Company Limited. All rights reserved.</p>
+                    <div class="footer-certifications">
+                        <span>ISO 9001:2008</span>
+                        <span>ISO 14001:2015</span>
+                        <span>ISO 45001:2018</span>
+                        <span>COREN Registered</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html> 
