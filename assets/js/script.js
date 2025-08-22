@@ -58,8 +58,12 @@ const navMenu = document.getElementById('nav-menu');
 
 if (hamburger && navMenu) {
     hamburger.addEventListener('click', function() {
+        const isActive = navMenu.classList.contains('active');
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
+        
+        // Update ARIA attributes
+        hamburger.setAttribute('aria-expanded', !isActive);
         
         // Prevent body scroll when menu is open
         document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
@@ -71,6 +75,7 @@ if (hamburger && navMenu) {
         link.addEventListener('click', function() {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
             document.body.style.overflow = '';
         });
         });
@@ -246,7 +251,7 @@ const contactForm = document.getElementById('contactForm');
         const formObject = Object.fromEntries(formData);
             
         // Basic form validation
-        const requiredFields = ['name', 'email', 'service', 'message'];
+        const requiredFields = ['name', 'email', 'phone', 'service', 'message'];
             let isValid = true;
         let firstInvalidField = null;
             
@@ -435,6 +440,7 @@ document.addEventListener('keydown', function(e) {
         if (hamburger && navMenu && navMenu.classList.contains('active')) {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
             document.body.style.overflow = '';
         }
     }
