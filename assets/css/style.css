@@ -34,7 +34,7 @@
     
     /* Typography */
     --font-primary: 'Inter', sans-serif;
-    --font-heading: 'Playfair Display', serif;
+    --font-heading: 'Inter', sans-serif;
     
     /* Spacing */
     --container-max-width: 1200px;
@@ -203,7 +203,7 @@ body {
 }
 
 .nav-logo .logo {
-    width: 40px;
+    width: 240px;
     height: auto;
 }
 
@@ -310,7 +310,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     background: var(--gray-100);
@@ -383,9 +383,11 @@ body {
 
 .hero-content {
     position: relative;
+    padding-top: 100px;
     z-index: 2;
     width: 100%;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .hero-content .container {
@@ -491,7 +493,8 @@ body {
 
 .engineer-image {
     width: 100%;
-    height: auto;
+    height: 500px;
+    object-fit: cover;
     border-radius: var(--radius-lg);
 }
 
@@ -886,7 +889,7 @@ body {
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 400px 1fr;
     gap: 4rem;
     margin-bottom: 4rem;
 }
@@ -896,6 +899,143 @@ body {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
+}
+
+.mission-vision-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mv-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 1rem;
+    border: 2px solid var(--gray-200);
+    cursor: pointer;
+    transition: var(--transition-base);
+    overflow: hidden;
+}
+
+.mv-card:hover {
+    border-color: var(--primary-green);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.mv-card.active {
+    border-color: var(--primary-green);
+    background: linear-gradient(135deg, var(--primary-green) 0%, rgba(0, 168, 90, 0.1) 100%);
+    padding: 1.5rem;
+}
+
+.mv-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.mv-card .mv-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.mv-card .mv-icon i {
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+.mv-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.mv-preview {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+
+.mv-card.active .mv-preview {
+    max-height: 100px;
+    opacity: 1;
+    margin-top: 0.75rem;
+}
+
+.mv-preview p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.mv-details {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    min-height: 400px;
+}
+
+.mv-detail {
+    display: none;
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.mv-detail.active {
+    display: block;
+    opacity: 1;
+}
+
+.mv-detail h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.mv-detail > p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.detail-points {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail-point {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: var(--gray-100);
+    border-radius: var(--radius);
+}
+
+.detail-point i {
+    color: var(--primary-green);
+    font-size: 1rem;
+}
+
+.detail-point span {
+    color: var(--text-primary);
+    font-weight: 500;
 }
 
 .mission-vision {
@@ -1109,10 +1249,26 @@ body {
     height: 200px;
     object-fit: cover;
     transition: var(--transition-base);
+    cursor: pointer;
 }
 
 .gallery-item:hover img {
+    transform: scale(1.15);
+    z-index: 10;
+    position: relative;
+    box-shadow: var(--shadow-xl);
+    border-radius: var(--radius-lg);
+}
+
+/* Enhanced hover effects for all images */
+img:hover {
     transform: scale(1.05);
+    transition: transform var(--transition-base);
+    cursor: pointer;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1);
 }
 
 .gallery-overlay {
@@ -1849,6 +2005,131 @@ body {
 .step-content p {
     color: var(--text-secondary);
     line-height: 1.6;
+}
+
+/* Image Gallery Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: var(--white);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+    transition: var(--transition-base);
+}
+
+.close-modal:hover {
+    color: var(--primary-green);
+}
+
+.modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 168, 90, 0.8);
+    color: var(--white);
+    border: none;
+    padding: 15px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: var(--transition-base);
+    border-radius: var(--radius);
+}
+
+.modal-nav:hover {
+    background: var(--primary-green);
+}
+
+.modal-nav.prev {
+    left: 20px;
+}
+
+.modal-nav.next {
+    right: 20px;
+}
+
+#modalImage {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+}
+
+.modal-caption {
+    text-align: center;
+    color: var(--white);
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.modal-caption h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-green);
+}
+
+.modal-caption p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .modal-nav {
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+    
+    .modal-nav.prev {
+        left: 10px;
+    }
+    
+    .modal-nav.next {
+        right: 10px;
+    }
+    
+    .close-modal {
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+    }
+    
+    #modalImage {
+        max-height: 60vh;
+    }
 }
 
 /* Footer */

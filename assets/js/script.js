@@ -603,6 +603,120 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Mission/Vision Card Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const mvCards = document.querySelectorAll('.mv-card');
+    const mvDetails = document.querySelectorAll('.mv-detail');
+    
+    mvCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const target = this.getAttribute('data-target');
+            
+            // Remove active class from all cards and details
+            mvCards.forEach(c => c.classList.remove('active'));
+            mvDetails.forEach(d => d.classList.remove('active'));
+            
+            // Add active class to clicked card and corresponding detail
+            this.classList.add('active');
+            const targetDetail = document.getElementById(target + '-detail');
+            if (targetDetail) {
+                targetDetail.classList.add('active');
+            }
+        });
+    });
+});
+
+// Image Gallery Modal Functionality
+let currentImageIndex = 0;
+const galleryImages = [
+    {
+        src: 'assets/images/projects_images/engineer at work (1).jpg',
+        title: 'Field Engineering',
+        description: 'Professional engineers in full PPE ensuring safety standards'
+    },
+    {
+        src: 'assets/images/projects_images/skilled worker.jpg',
+        title: 'Skilled Installation',
+        description: 'Expert technicians with proper safety equipment'
+    },
+    {
+        src: 'assets/images/projects_images/new water pump installed.jpg',
+        title: 'Pump Installation',
+        description: 'Modern water pumping systems for reliable supply'
+    },
+    {
+        src: 'assets/images/projects_images/bulk meter 3.jpg',
+        title: 'Metering Solutions',
+        description: 'Precision bulk metering with safety compliance'
+    },
+    {
+        src: 'assets/images/projects_images/reservoir 3.jpg',
+        title: 'Storage Infrastructure',
+        description: 'Large-scale water storage and distribution systems'
+    },
+    {
+        src: 'assets/images/projects_images/rehabilitated water workss.jpg',
+        title: 'Plant Rehabilitation',
+        description: 'Upgrading and modernizing existing water infrastructure'
+    }
+];
+
+function openModal(index) {
+    currentImageIndex = index;
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    
+    modalImage.src = galleryImages[index].src;
+    modalImage.alt = galleryImages[index].title;
+    modalTitle.textContent = galleryImages[index].title;
+    modalDescription.textContent = galleryImages[index].description;
+    
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+    openModal(currentImageIndex);
+}
+
+function prevImage() {
+    currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+    openModal(currentImageIndex);
+}
+
+// Close modal when clicking outside the image
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('imageModal');
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+});
+
+// Keyboard navigation for modal
+document.addEventListener('keydown', function(event) {
+    const modal = document.getElementById('imageModal');
+    if (modal.style.display === 'block') {
+        if (event.key === 'Escape') {
+            closeModal();
+        } else if (event.key === 'ArrowRight') {
+            nextImage();
+        } else if (event.key === 'ArrowLeft') {
+            prevImage();
+        }
+    }
+});
+
 // Export functions for potential module usage
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
